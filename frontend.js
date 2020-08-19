@@ -59,7 +59,7 @@ document.querySelector('.add-todo').addEventListener('click', function() {
     complete: false,
     id: todos.length,
   }
-
+  postTodo(todo);
   addTodo(todo);
   printTodo(todo);
   inputBox.value = '';
